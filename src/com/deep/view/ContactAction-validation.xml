@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+  
+  <!DOCTYPE validators PUBLIC   
+        "-//OpenSymphony Group//XWork Validator 1.0.2//EN"   
+        "http://www.opensymphony.com/xwork/xwork-validator-1.0.2.dtd">  
+  
+        <validators>  
+          
+        <field name="emp.firstName">  
+        <field-validator type="requiredstring">  
+        <message> First Name can't be blank</message>  
+        </field-validator>  
+        </field>  
+        <field name="emp.lastName">  
+        <field-validator type="requiredstring">  
+        <message>Last Name can't be blank</message>  
+        </field-validator>  
+        </field>  
+          
+         <field name="emp.email">  
+        <field-validator type="requiredstring">  
+        <message>Email can't be blank</message>  
+        </field-validator>  
+        </field>  
+          
+        <field name="emp.password">  
+        <field-validator type="requiredstring">  
+        <message>Password can't be blank</message>  
+        </field-validator>  
+        <field-validator type="stringlength">  
+        <param name="minLength">6</param>  
+        <param name="maxLength">10</param>  
+        <message><b>Password length must be between 6 to 10. </b></message>  
+        </field-validator>  
+          
+        </field>  
+          
+        </validators>  
